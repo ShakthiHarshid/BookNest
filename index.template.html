@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <meta name="description" content="A calm, thoughtful way to discover your next good read." />
+    <title>BookNest — Find your next good read</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to books</a>
+    <header class="site-header">
+      <a class="brand" href="#main" aria-label="BookNest home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>booknest</span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="nav-current" href="#catalogue">Explore</a>
+        <a href="#recommendations">For you</a>
+      </nav>
+      <span class="demo-tag"><span aria-hidden="true">●</span> DEMO CATALOGUE</span>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER STARTS HERE</p>
+          <h1 id="hero-title">A little curiosity<br />goes a <em>long way.</em></h1>
+          <p class="hero-lede">Find the book that makes your next big idea feel a little closer.</p>
+          <form class="search-form" id="search-form" role="search">
+            <label class="sr-only" for="search">Search titles and authors</label>
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="Try a title or author…" autocomplete="off" />
+            <button class="clear-search" id="clear-search" type="button" aria-label="Clear search" hidden>×</button>
+            <button class="search-button" type="submit">Search <span aria-hidden="true">↗</span></button>
+          </form>
+          <p class="search-hint">Search across titles and authors</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun-disc"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="hero-book book-back"><i></i><b></b></div>
+          <div class="hero-book book-front"><i></i><span>THE<br />ART OF<br />WONDER</span><b>FIELD NOTES · VOL. 01</b></div>
+          <div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✦</div>
+          <div class="art-caption">GOOD THINGS<br />ARE IN HERE</div>
+        </div>
+      </section>
+
+      <section class="catalogue-section" id="catalogue" aria-labelledby="catalogue-title">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> THE COLLECTION</p><h2 id="catalogue-title">Find your next read</h2></div>
+          <p class="result-count" id="result-count" aria-live="polite">Loading books…</p>
+        </div>
+        <div class="catalogue-layout">
+          <aside class="filter-panel" aria-label="Catalogue filters">
+            <div class="filter-title"><span class="filter-glyph" aria-hidden="true">☷</span><h3>Refine</h3><button id="reset-filters" class="text-button" type="button">Reset all</button></div>
+            <label class="control-label" for="subject-filter">SUBJECT</label>
+            <select id="subject-filter"><option value="">All subjects</option></select>
+            <label class="control-label" for="availability-filter">AVAILABILITY</label>
+            <select id="availability-filter"><option value="">Any availability</option><option>Available</option><option>Checked Out</option></select>
+            <label class="control-label sort-label" for="sort-select">SORT BY</label>
+            <select id="sort-select">
+              <option value="title-asc">Title A–Z</option><option value="title-desc">Title Z–A</option>
+              <option value="year-newest">Newest first</option><option value="year-oldest">Oldest first</option>
+            </select>
+            <div class="filter-note"><span aria-hidden="true">✳</span><p>Small steps, big discoveries. Browse a subject you’ve been curious about.</p></div>
+          </aside>
+          <div class="results-area">
+            <div id="data-notice" class="data-notice" role="status" hidden></div>
+            <div id="catalogue-state" class="state-panel" role="status" hidden></div>
+            <div id="book-grid" class="book-grid" aria-live="polite" aria-busy="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommend-section" id="recommendations" aria-labelledby="recommend-title">
+        <div class="recommend-intro"><p class="eyebrow"><span class="eyebrow-line"></span> A PLACE TO START</p><h2 id="recommend-title">Follow a thread<br />of <em>curiosity.</em></h2><p>Pick a subject and we’ll surface a few more reads to keep you exploring.</p></div>
+        <div class="recommend-box">
+          <label class="control-label" for="recommend-subject">I’M CURIOUS ABOUT</label>
+          <div class="recommend-controls"><select id="recommend-subject"><option value="">Choose a subject</option></select><button id="recommend-button" type="button">Show me <span aria-hidden="true">↗</span></button></div>
+          <div id="recommend-results" class="recommend-results" aria-live="polite"></div>
+        </div>
+      </section>
+      <footer class="site-footer"><a class="brand footer-brand" href="#main"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>booknest</span></a><p>A small demo catalogue for curious minds. No real library holdings are represented.</p><a href="#main" class="back-top">Back to top ↑</a></footer>
+    </main>
+
+    <dialog id="book-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close book details">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+    <noscript><p class="noscript">BookNest needs JavaScript enabled to load its local catalogue.</p></noscript>
+  </body>
+</html>

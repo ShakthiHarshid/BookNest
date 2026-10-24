@@ -1,0 +1,13 @@
+{
+  "name": "booknest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A lightweight library discovery app powered by a local CSV catalogue.",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "preview": "node build-preview.mjs",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,36 @@
+book_id,title,author,subject,publication_year,availability
+BN001,The Quiet Algorithm,Mira Solanki,Computer Science,2022,Available
+BN002,Networks for Curious Minds,Jonas Reed,Computer Science,2021,Checked Out
+BN003,Small Data and Big Questions,Amara Okafor,Computer Science,2024,Available
+BN004,The Shape of Proof,Elena Varga,Mathematics,2019,Available
+BN005,Patterns in the Wild,Theo Nakamura,Mathematics,2023,Checked Out
+BN006,An Intuitive Guide to Statistics,Leila Haddad,Mathematics,2020,Available
+BN007,Light Between Worlds,Samira Chen,Physics,2021,Available
+BN008,The Everyday Cosmos,Oliver Mensah,Physics,2018,Checked Out
+BN009,"Signals, Fields, and Waves",Nina Petrov,Physics,2025,Available
+BN010,Molecules at Home,Dr. Imani Brooks,Chemistry,2020,Available
+BN011,The Color of Reactions,Andrés Molina,Chemistry,2022,Checked Out
+BN012,An Atlas of Tiny Things,Mei Laurent,Chemistry,2017,Available
+BN013,Life in a Changing Forest,Ruth Adeyemi,Biology,2023,Available
+BN014,Cells and Their Stories,Arjun Nair,Biology,2019,Checked Out
+BN015,Field Notes on Fungi,Maeve O'Connell,Biology,2024,Available
+BN016,Letters from the Blue Room,Clara Bell,Literature,2016,Available
+BN017,The Mapmaker's Winter,Idris K. Bello,Literature,2021,Checked Out
+BN018,Soft Edges,Lucía Fernández,Literature,2025,Available
+BN019,Rivers of the Ancient World,Peter W. Okoro,History,2018,Available
+BN020,An Archive of Ordinary Days,Farah Siddiqui,History,2022,Checked Out
+BN021,The Long Road to the Republic,Noah Williams,History,2015,Available
+BN022,Markets and Morning Coffee,Evelyn Park,Economics,2023,Available
+BN023,The Commons We Share,Daniel Mensah,Economics,2020,Checked Out
+BN024,"Money, Work, and Meaning",Inés Valdés,Economics,2024,Available
+BN025,The Student's Field Guide to Climate,Elias Morgan,General Reference,2022,Available
+BN026,How to Read a Research Paper,Asha Rahman,General Reference,2021,Available
+BN027,Questions Worth Asking,Nora Ibrahim,General Reference,2019,Checked Out
+BN028,The Practical Lab Notebook,Dev Patel,General Reference,2025,Available
+BN029,Geometry of the Night Sky,Sofia Lind,Mathematics,2024,Available
+BN030,The Sound of a Falling Star,Caleb James,Physics,2020,Available
+BN031,Computing with Care,Harper Nguyen,Computer Science,2025,Checked Out
+BN032,"Seeds, Soil, and Seasons",Tariq El-Sayed,Biology,2017,Available
+BN033,The Museum of Lost Time,Ada K. Laurent,History,2024,Available
+BN034,A Notebook for New Economists,Mateo Silva,Economics,2018,Available
+BN035,Poems for the In-Between,June Park,Literature,2023,Checked Out
